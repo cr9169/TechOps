@@ -1,8 +1,11 @@
-import React from "react";
 import "./App.css";
 
 function App() {
-  return <div></div>;
+  return (
+    <>
+      <div>hiiiiiiiiiiii</div>
+    </>
+  );
 }
 
 export default App;
