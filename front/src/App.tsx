@@ -1,9 +1,12 @@
-import "./App.css";
+import HomePage from "./components/HomePage";
+import "./App.scss";
 
 function App() {
   return (
     <>
-      <div>hiiiiiiiiiiii</div>
+      <div className="main-app-orientation">
+        <HomePage></HomePage>
+      </div>
     </>
   );
 }

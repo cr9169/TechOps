@@ -1,0 +1,22 @@
+.home-page-main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-main {
+  height: 50%;
+  width: 80%;
+  background-color: #6c6c6c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 5rem 10rem 5rem;
+  border-radius: 4px;
+}
+
+.box-main-orientation {
+}
