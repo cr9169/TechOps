@@ -1,4 +1,5 @@
 .home-page-main {
+  background-color: #384054;
   width: 100%;
   height: 100%;
   display: flex;
@@ -8,15 +9,42 @@
 }
 
 .box-main {
-  height: 50%;
+  height: 80%;
   width: 80%;
-  background-color: #6c6c6c;
+  background-color: #25282e;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10rem 5rem 10rem 5rem;
-  border-radius: 4px;
+  padding: 2rem 2.5rem 2.5rem 3rem;
+  border-radius: 10px;
 }
 
 .box-main-orientation {
+  background-color: #384054;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  border-radius: 10px;
+}
+
+// #f86446
+.box-secondary-orientation {
+  background-color: #25282e;
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+
+.article-submit-button {
+  background-color: #f86446;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  border-radius: 5px;
 }
