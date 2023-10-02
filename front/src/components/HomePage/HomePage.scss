@@ -9,14 +9,16 @@
 }
 
 .box-main {
-  height: 80%;
+  height: auto;
   width: 80%;
+  min-height: 80%;
   background-color: #25282e;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 2.5rem 2.5rem 3rem;
   border-radius: 10px;
+  overflow: auto; /* Enable scrolling when content exceeds container size */
 }
 
 .box-main-orientation {
@@ -25,21 +27,22 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   border-radius: 10px;
+  gap: 0.5rem;
 }
 
 .title-box-main-orientation {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
+  font-size: large;
 }
 
 .content-box-main-orientation {
-  display: flex;
-  flex-direction: row;
+  // display: flex;
+  // flex-direction: row;
+  margin-top: 10px;
 }
 
-// #f86446
 .box-secondary-orientation {
   background-color: #25282e;
   height: 10%;

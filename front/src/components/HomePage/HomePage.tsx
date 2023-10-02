@@ -29,7 +29,7 @@ const HomePage = ({}: {}) => {
     <div className="home-page-main">
       <Box className="box-main">
         <div className="box-main-orientation">
-          <ThemeProvider theme={HomePageThemes.textFieldTheme(outerTheme)}>
+          <ThemeProvider theme={HomePageThemes.titleTextFieldTheme(outerTheme)}>
             <TextField
               focused
               className="title-box-main-orientation"
@@ -38,6 +38,10 @@ const HomePage = ({}: {}) => {
               value={articleTitle}
               onChange={handleArticleTitleChange}
             ></TextField>
+          </ThemeProvider>
+          <ThemeProvider
+            theme={HomePageThemes.contentTextFieldTheme(outerTheme)}
+          >
             <TextField
               focused
               className="content-box-main-orientation"
