@@ -34,7 +34,6 @@ const HomePage = ({}: {}) => {
               focused
               className="title-box-main-orientation"
               label="Title"
-              multiline
               value={articleTitle}
               onChange={handleArticleTitleChange}
             ></TextField>

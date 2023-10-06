@@ -1,7 +1,7 @@
 import { Theme, createTheme } from "@mui/material/styles";
 import { outlinedInputClasses } from "@mui/material/OutlinedInput";
 
-const myBody2FontSize = "35px";
+const myBody2FontSize = "30px";
 
 class HomePageThemes {
   static titleTextFieldTheme = (outerTheme: Theme) =>
@@ -10,18 +10,27 @@ class HomePageThemes {
         mode: outerTheme.palette.mode,
         text: {
           primary: "#e0492a"
+        },
+        background: {
+          default: "#384054" // Set the default background color of the theme
         }
       },
       components: {
         MuiTextField: {
+          defaultProps: {
+            inputProps: {
+              maxLength: 60
+            }
+          },
           styleOverrides: {
             root: {
+              backgroundColor: "#384054", // Set the TextField background color
               "--TextField-brandBorderColor": "#384054",
               "--TextField-brandBorderHoverColor": "#ffff",
               "--TextField-brandBorderFocusedColor": "#ffff",
               "& .MuiInputBase-input": {
-                fontSize: myBody2FontSize, // this is the default mui body2 font-size
-                lineHeight: "25px" // and any other styles you want...
+                fontSize: myBody2FontSize,
+                lineHeight: "30px"
               },
               "& label.Mui-focused": {
                 color: "var(--TextField-brandBorderFocusedColor)"
@@ -35,6 +44,7 @@ class HomePageThemes {
               borderColor: "var(--TextField-brandBorderColor)"
             },
             root: {
+              backgroundColor: "#384054", // Set the OutlinedInput background color
               [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
                 borderColor: "var(--TextField-brandBorderFocusedColor)"
               }
@@ -44,6 +54,7 @@ class HomePageThemes {
         MuiFilledInput: {
           styleOverrides: {
             root: {
+              backgroundColor: "#384054", // Set the FilledInput background color
               "&:before, &:after": {
                 borderBottom: "2px solid var(--TextField-brandBorderColor)"
               },
@@ -60,6 +71,7 @@ class HomePageThemes {
         MuiInput: {
           styleOverrides: {
             root: {
+              backgroundColor: "#384054", // Set the Input background color
               "&:before": {
                 borderBottom: "2px solid var(--TextField-brandBorderColor)"
               },
@@ -88,10 +100,11 @@ class HomePageThemes {
         MuiTextField: {
           styleOverrides: {
             root: {
+              backgroundColor: "#384054",
+
               "--TextField-brandBorderColor": "#384054",
               "--TextField-brandBorderHoverColor": "#ffff",
               "--TextField-brandBorderFocusedColor": "#ffff",
-
               "& label.Mui-focused": {
                 color: "var(--TextField-brandBorderFocusedColor)"
               }
@@ -104,6 +117,7 @@ class HomePageThemes {
               borderColor: "var(--TextField-brandBorderColor)"
             },
             root: {
+              backgroundColor: "#384054",
               [`&.Mui-focused .${outlinedInputClasses.notchedOutline}`]: {
                 borderColor: "var(--TextField-brandBorderFocusedColor)"
               }
@@ -113,6 +127,7 @@ class HomePageThemes {
         MuiFilledInput: {
           styleOverrides: {
             root: {
+              backgroundColor: "#384054",
               "&:before, &:after": {
                 borderBottom: "2px solid var(--TextField-brandBorderColor)"
               },
@@ -129,6 +144,7 @@ class HomePageThemes {
         MuiInput: {
           styleOverrides: {
             root: {
+              backgroundColor: "#384054",
               "&:before": {
                 borderBottom: "2px solid var(--TextField-brandBorderColor)"
               },
