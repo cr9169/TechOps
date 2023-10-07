@@ -1,55 +1,61 @@
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Main Background & Layout */
 .home-page-main {
   background-color: #384054;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  overflow: auto;
 }
 
 .box-main {
-  height: auto;
   width: 80%;
-  min-height: 80%;
+  min-height: 80vh; /* This will ensure the div is at least 80% of the viewport height */
   background-color: #25282e;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 2rem 2.5rem 2.5rem 3rem;
   border-radius: 10px;
-  overflow: auto; /* Enable scrolling when content exceeds container size */
+  overflow: auto; /* This will add a scrollbar if the content overflows the div */
+  margin-top: 2rem;
 }
 
 .box-main-orientation {
   background-color: #25282e;
-  height: 90%;
   width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   gap: 0.5rem;
-}
-
-.title-box-main-orientation {
-  // display: flex;
-  // flex-direction: row;
-  // font-size: large;
-}
-
-.content-box-main-orientation {
-  // display: flex;
-  // flex-direction: row;
-  margin-top: 10px;
+  flex-grow: 1;
 }
 
 .box-secondary-orientation {
   background-color: #25282e;
-  height: 10%;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: right;
+}
+
+/* Individual Component Styles */
+.title-box-main-orientation {
+  /* Your styles here, if any... */
+}
+
+.content-box-main-orientation {
+  margin-top: 10px;
+  /* Add any other styles you have for this class... */
 }
 
 .article-submit-button {
@@ -60,4 +66,6 @@
   justify-content: center;
   align-self: flex-end;
   border-radius: 5px;
+  gap: 10rem;
+  /* Add any other styles you have for this button... */
 }
