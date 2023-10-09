@@ -17,7 +17,7 @@ const HomePage: React.FC = () => {
         className="inputTitle"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        maxLength={80}
+        maxLength={30}
       />
       <textarea
         placeholder="Write your content here..."
