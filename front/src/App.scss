@@ -1,12 +1,15 @@
 body,
 html {
-  background-color: #f5efea;
+  background-color: #292929; /* Dark gray background for body */
+  color: #ffffff; /* White text color for dark mode */
+  font-family: "Arial", sans-serif;
 }
 
 .main-app-orientation {
-  min-height: 100vh; // use min-height instead of height
+  min-height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 5rem;
 }

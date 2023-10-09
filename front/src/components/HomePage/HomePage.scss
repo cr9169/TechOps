@@ -1,16 +1,21 @@
-body {
-  background-color: #f9f9f9; /* Light gray background for body */
-}
-
 .articleContainer {
   display: block;
   width: 70rem;
-  margin: 3rem auto 1rem auto;
+  margin: 3rem auto 5rem auto;
   padding: 2rem 3rem 2rem 1.5rem;
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  margin-bottom: 5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #ffffff; /* Text color for the container */
+}
+
+/* Adjusted input styles to be visible in dark mode */
+.inputTitle,
+.inputContent {
+  border: 1px solid #555;
+  background-color: #1f1f1f;
+  color: #ffffff; /* White text color for inputs */
+  transition: border-color 0.3s, background-color 0.3s;
 }
 
 .inputTitle {
@@ -18,15 +23,13 @@ body {
   padding: 0.8rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  border: 1px solid #e1e1e1; /* Adjusted border color */
   border-radius: 5px;
-  background-color: #ffffff; /* White background for title input */
-  transition: border-color 0.3s, background-color 0.3s;
 }
 
-.inputTitle:focus {
-  border-color: #a0a0a0;
-  background-color: #fff;
+.inputTitle:focus,
+.inputContent:focus {
+  border-color: #777;
+  background-color: #3e3e3e;
 }
 
 .inputContent {
@@ -35,30 +38,22 @@ body {
   min-height: 60vh;
   padding: 0.8rem;
   margin-bottom: 1.5rem;
-  border: 1px solid #e1e1e1; /* Adjusted border color */
   border-radius: 5px;
-  background-color: #ffffff; /* White background for content input */
-  transition: border-color 0.3s, background-color 0.3s;
   resize: vertical;
   overflow-x: hidden;
 }
 
-.inputContent:focus {
-  border-color: #a0a0a0;
-  background-color: #fff;
-}
-
 .submitButtonContainer {
   display: flex;
-  justify-content: center; /* Align horizontally in the center */
-  align-items: center; /* Align vertically in the center */
-  margin-top: 0.3rem; /* Space from the text area */
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.3rem;
 }
 
 .submitButton {
-  padding: 0.8rem 1.5rem; /* Adjusted for better look */
-  background-color: #57a773; /* Changed to the teal-green color */
-  color: #fff;
+  padding: 0.8rem 1.5rem;
+  background-color: #3700b3;
+  color: #fff; /* Text color for the button */
   font-size: 1rem;
   border: none;
   border-radius: 5px;
@@ -68,5 +63,5 @@ body {
 
 .submitButton:hover,
 .submitButton:focus {
-  background-color: #3d7a53; /* Darker shade of teal-green for hover and focus */
+  background-color: #30009c;
 }
