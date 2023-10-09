@@ -1,68 +1,37 @@
-import { ChangeEvent, useState } from "react";
-import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import { useTheme } from "@mui/material/styles";
-import Button from "@mui/material/Button";
-import HomePageThemes from "./Themes";
+import React, { useState } from "react";
 import "./HomePage.scss";
 
-const HomePage = ({}: {}) => {
-  const [articleContent, setArticleContent] = useState<string>("");
-  const [articleTitle, setArticleTitle] = useState<string>("");
+const HomePage: React.FC = () => {
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
 
-  const outerTheme = useTheme();
-
-  const handleArticleTextChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setArticleContent(event.target.value);
-  };
-
-  const handleArticleTitleChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setArticleTitle(event.target.value);
-  };
-
-  const hanleSubmitArticle = () => {
-    // save in DB;
+  const handleSubmit = () => {
+    // You can handle the submit logic here.
+    // For demonstration purposes, I'm just printing the title and content.
+    console.log(title, content);
   };
 
   return (
-    <div className="home-page-main">
-      <Box className="box-main">
-        <div className="box-main-orientation">
-          <ThemeProvider theme={HomePageThemes.titleTextFieldTheme(outerTheme)}>
-            <TextField
-              focused
-              className="title-box-main-orientation"
-              label="Title"
-              multiline
-              value={articleTitle}
-              onChange={handleArticleTitleChange}
-            ></TextField>
-          </ThemeProvider>
-          <ThemeProvider
-            theme={HomePageThemes.contentTextFieldTheme(outerTheme)}
-          >
-            <TextField
-              focused
-              className="content-box-main-orientation"
-              label="Write your content here!"
-              multiline
-              value={articleContent}
-              onChange={handleArticleTextChange}
-            ></TextField>
-          </ThemeProvider>
-        </div>
-        <div className="box-secondary-orientation">
-          <Button
-            className="article-submit-button"
-            onClick={hanleSubmitArticle}
-            variant="outlined"
-            color="warning"
-          >
-            Submit
-          </Button>
-        </div>
-      </Box>
+    <div className="articleContainer">
+      <input
+        type="text"
+        placeholder="Article Title"
+        className="inputTitle"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        maxLength={80}
+      />
+      <textarea
+        placeholder="Write your content here..."
+        className="inputContent"
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+      ></textarea>
+      <div className="submitButtonContainer">
+        <button className="submitButton" onClick={handleSubmit}>
+          Submit
+        </button>
+      </div>
     </div>
   );
 };

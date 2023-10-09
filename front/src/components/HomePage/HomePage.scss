@@ -1,63 +1,72 @@
-.home-page-main {
-  background-color: #384054;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+body {
+  background-color: #f9f9f9; /* Light gray background for body */
 }
 
-.box-main {
-  height: auto;
-  width: 80%;
-  min-height: 80%;
-  background-color: #25282e;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2rem 2.5rem 2.5rem 3rem;
+.articleContainer {
+  display: block;
+  width: 70rem;
+  margin: 3rem auto 1rem auto;
+  padding: 2rem 3rem 2rem 1.5rem;
+  background-color: #ffffff;
   border-radius: 10px;
-  overflow: auto; /* Enable scrolling when content exceeds container size */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5rem;
 }
 
-.box-main-orientation {
-  background-color: #384054;
-  height: 90%;
+.inputTitle {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  gap: 0.5rem;
-}
-
-.title-box-main-orientation {
-  // display: flex;
-  // flex-direction: row;
-  font-size: large;
-}
-
-.content-box-main-orientation {
-  // display: flex;
-  // flex-direction: row;
-  margin-top: 10px;
-}
-
-.box-secondary-orientation {
-  background-color: #25282e;
-  height: 10%;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
-}
-
-.article-submit-button {
-  background-color: #f86446;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-end;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border: 1px solid #e1e1e1; /* Adjusted border color */
   border-radius: 5px;
+  background-color: #ffffff; /* White background for title input */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+
+.inputTitle:focus {
+  border-color: #a0a0a0;
+  background-color: #fff;
+}
+
+.inputContent {
+  width: 100%;
+  height: 60vh;
+  min-height: 60vh;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #e1e1e1; /* Adjusted border color */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for content input */
+  transition: border-color 0.3s, background-color 0.3s;
+  resize: vertical;
+  overflow-x: hidden;
+}
+
+.inputContent:focus {
+  border-color: #a0a0a0;
+  background-color: #fff;
+}
+
+.submitButtonContainer {
+  display: flex;
+  justify-content: center; /* Align horizontally in the center */
+  align-items: center; /* Align vertically in the center */
+  margin-top: 0.3rem; /* Space from the text area */
+}
+
+.submitButton {
+  padding: 0.8rem 1.5rem; /* Adjusted for better look */
+  background-color: #57a773; /* Changed to the teal-green color */
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover,
+.submitButton:focus {
+  background-color: #3d7a53; /* Darker shade of teal-green for hover and focus */
 }
