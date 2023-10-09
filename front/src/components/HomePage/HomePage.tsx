@@ -6,8 +6,6 @@ const HomePage: React.FC = () => {
   const [content, setContent] = useState("");
 
   const handleSubmit = () => {
-    // You can handle the submit logic here.
-    // For demonstration purposes, I'm just printing the title and content.
     console.log(title, content);
   };
 
@@ -32,6 +30,7 @@ const HomePage: React.FC = () => {
           Submit
         </button>
       </div>
+      <></>
     </div>
   );
 };
