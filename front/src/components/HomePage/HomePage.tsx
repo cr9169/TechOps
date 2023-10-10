@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./HomePage.scss";
 
-const HomePage: React.FC = () => {
+const HomePage: React.FC = ({}: {}) => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
