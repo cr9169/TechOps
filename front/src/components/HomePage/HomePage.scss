@@ -1,6 +1,6 @@
 .articleContainer {
-  width: 70rem;
-  margin: 3rem auto 5rem auto;
+  max-width: 95%;
+  margin: 5vh auto 7vh auto;
   padding: 2rem 3rem 2rem 1.5rem;
   background-color: #000000;
   border-radius: 10px;
@@ -22,7 +22,7 @@
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 0.5rem;
-  font-size: 3rem;
+  font-size: 2vw;
   border-radius: 5px;
 }
 
@@ -35,7 +35,7 @@
 .inputContent {
   width: 100%;
   height: 59vh;
-  min-height: 59vh;
+  min-height: 25vh;
   padding: 0.8rem;
   font-size: 1.2rem;
   border-radius: 5px;
@@ -64,4 +64,11 @@
 .submitButton:hover,
 .submitButton:focus {
   background-color: #629202;
+}
+
+// Media Query Example: Adjust styles for screens smaller than 600px
+@media (max-width: 600px) {
+  .inputTitle {
+    font-size: 2.5rem;
+  }
 }
