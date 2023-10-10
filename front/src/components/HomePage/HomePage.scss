@@ -1,7 +1,12 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 .articleContainer {
   max-width: 95%;
   margin: 5vh auto 4vh auto;
-  padding: 2rem 3rem 2rem 1.5rem;
+  padding: 2rem 1.5rem 2rem 1.5rem;
   background-color: #000000;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -16,6 +21,7 @@
   background-color: #1f1f1f;
   color: #ffffff;
   transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
 }
 
 .inputTitle {
@@ -37,7 +43,7 @@
   height: 59vh;
   min-height: 25vh;
   padding: 0.8rem;
-  font-size: 1.2rem;
+  font-size: 1.2vw;
   border-radius: 5px;
   resize: vertical;
   overflow-x: hidden;
@@ -47,6 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .submitButton {
