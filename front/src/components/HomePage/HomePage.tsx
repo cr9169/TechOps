@@ -10,28 +10,27 @@ const HomePage: React.FC = ({}: {}) => {
   };
 
   return (
-    <div className="mainContainer">
-      <div className="articleContainer">
+    <div className="main-container">
+      <div className="article-container">
         <input
           type="text"
           placeholder="Article Title"
-          className="inputTitle"
+          className="input-title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           maxLength={30}
         />
         <textarea
           placeholder="Write your content here..."
-          className="inputContent"
+          className="input-content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
         ></textarea>
-        <div className="submitButtonContainer">
-          <button className="submitButton" onClick={handleSubmit}>
+        <div className="submit-button-container">
+          <button className="submit-button" onClick={handleSubmit}>
             Submit
           </button>
         </div>
-        <></>
       </div>
     </div>
   );

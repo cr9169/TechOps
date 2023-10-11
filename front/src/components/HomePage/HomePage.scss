@@ -1,9 +1,10 @@
-.mainContainer {
+.main-container {
   display: flex;
   flex-direction: column;
 }
 
-.articleContainer {
+.article-container {
+  width: 80rem;
   max-width: 95%;
   margin: 5vh auto 4vh auto;
   padding: 2rem 1.5rem 2rem 1.5rem;
@@ -15,8 +16,8 @@
   overflow-y: auto;
 }
 
-.inputTitle,
-.inputContent {
+.input-title,
+.input-content {
   border: 1px solid #555;
   background-color: #1f1f1f;
   color: #ffffff;
@@ -24,7 +25,7 @@
   box-sizing: border-box;
 }
 
-.inputTitle {
+.input-title {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 0.5rem;
@@ -32,13 +33,13 @@
   border-radius: 5px;
 }
 
-.inputTitle:focus,
-.inputContent:focus {
+.input-title:focus,
+.input-content:focus {
   border-color: #777;
   background-color: #3e3e3e;
 }
 
-.inputContent {
+.input-content {
   width: 100%;
   height: 59vh;
   min-height: 25vh;
@@ -49,14 +50,14 @@
   overflow-x: hidden;
 }
 
-.submitButtonContainer {
+.submit-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 
-.submitButton {
+.submit-button {
   padding: 0.8rem 1.5rem;
   background-color: #80bf02;
   color: #fff;
@@ -68,14 +69,14 @@
   margin-top: 1rem;
 }
 
-.submitButton:hover,
-.submitButton:focus {
+.submit-button:hover,
+.submit-button:focus {
   background-color: #629202;
 }
 
-// Media Query Example: Adjust styles for screens smaller than 600px
+/* Media Query Example: Adjust styles for screens smaller than 600px */
 @media (max-width: 600px) {
-  .inputTitle {
+  .input-title {
     font-size: 2.5rem;
   }
 }
