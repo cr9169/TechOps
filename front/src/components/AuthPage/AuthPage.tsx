@@ -15,9 +15,9 @@ const AuthPage: React.FC = () => {
   };
 
   return (
-    <div className="main-container">
-      <div className="article-container">
-        <div className="input-section">
+    <div className="auth-main-container">
+      <div className="auth-article-container">
+        <div className="auth-input-section">
           <PeopleIcon style={{ color: "#80bf02" }} />
           <UserDetailsInput
             GenericMuiIcon={LockIcon}

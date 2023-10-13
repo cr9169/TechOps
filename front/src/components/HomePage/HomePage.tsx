@@ -10,8 +10,8 @@ const HomePage: React.FC = ({}: {}) => {
   };
 
   return (
-    <div className="main-container">
-      <div className="article-container">
+    <div className="home-main-container">
+      <div className="home-article-container">
         <input
           type="text"
           placeholder="Article Title"

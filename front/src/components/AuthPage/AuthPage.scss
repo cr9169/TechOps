@@ -1,9 +1,9 @@
-.main-container {
+.auth-main-container {
   display: flex;
   flex-direction: column;
 }
 
-.article-container {
+.auth-article-container {
   width: 50rem;
   max-width: 95%;
   height: auto;
@@ -14,18 +14,19 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   color: #ffffff;
   box-sizing: border-box;
+  border: 2px solid #ffffff;
 }
 
-.input-section {
+.auth-input-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.input-section svg {
-  width: 15vh;
-  height: 15vw;
+.auth-input-section svg {
+  width: 10rem;
+  height: 15rem;
 }
 
 .inputs-special-actions-section {
@@ -48,7 +49,7 @@
 }
 
 .login-button {
-  padding: 0.8rem 7rem;
+  padding: 1.2rem 7rem;
   background-color: #80bf02;
   font-weight: bold;
   color: #fff;
@@ -57,13 +58,13 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .google-login-btn {
-  display: flex; /* Enable flexbox for this button */
-  align-items: center; /* Vertically align items in the center */
-  justify-content: center; /* Horizontally center items */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0rem 1.6rem;
   background-color: #80bf02;
   font-weight: bold;
@@ -77,16 +78,14 @@
 }
 
 .google-login-btn svg {
-  margin-right: 1rem; /* Add some space between the logo and the text */
+  margin-right: 1rem;
   width: 4vh;
-  height: 4vw;
-}
-
-.google-btn:hover {
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  height: 3vw;
 }
 
 .login-button:hover,
-.login-button:focus {
+.login-button:focus,
+.google-login-btn:hover,
+.google-login-btn:focus {
   background-color: #629202;
 }

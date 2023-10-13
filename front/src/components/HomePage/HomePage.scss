@@ -1,9 +1,9 @@
-.main-container {
+.home-main-container {
   display: flex;
   flex-direction: column;
 }
 
-.article-container {
+.home-article-container {
   width: 80rem;
   max-width: 95%;
   margin: 5vh auto 4vh auto;
@@ -14,6 +14,7 @@
   color: #ffffff;
   box-sizing: border-box;
   overflow-y: auto;
+  border: 2px solid white;
 }
 
 .input-title,

@@ -1,5 +1,6 @@
 import { SvgIconProps } from "@mui/material";
-import React, { useState } from "react";
+import React from "react";
+import { capitalizeFirstLetter } from "../../../utils/StringActions";
 import "./UserDetailsInput.scss";
 
 const UserDetailsInput = ({
@@ -16,7 +17,7 @@ const UserDetailsInput = ({
       <GenericMuiIcon style={{ color: "#80bf02" }} />
       <input
         type="text"
-        placeholder="Username"
+        placeholder={capitalizeFirstLetter(inputData)}
         className="input-data-section"
         value={inputData}
         onChange={(e) => setInputData(e.target.value)}
