@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import PeopleIcon from "@mui/icons-material/People";
 import LockIcon from "@mui/icons-material/Lock";
 import PersonIcon from "@mui/icons-material/Person";
-import GoogleIcon from "@mui/icons-material/Google";
-import "./AuthPage.scss";
 import UserDetailsInput from "./UserDetailsInput/UserDetailsInput";
+import GoogleLoginButton from "./GoogleLoginButton/GoogleLoginButton";
+import "./AuthPage.scss";
 
 const AuthPage: React.FC = () => {
   const [username, setUsername] = useState("");
@@ -18,16 +18,20 @@ const AuthPage: React.FC = () => {
     <div className="auth-main-container">
       <div className="auth-article-container">
         <div className="auth-input-section">
-          <PeopleIcon style={{ color: "#80bf02" }} />
+          <div className="people-icon">
+            <PeopleIcon style={{ color: "#80bf02" }} />
+          </div>
           <UserDetailsInput
             GenericMuiIcon={LockIcon}
             inputData={username}
             setInputData={setUsername}
+            placeHolder={"Username"}
           />
           <UserDetailsInput
             GenericMuiIcon={PersonIcon}
             inputData={password}
             setInputData={setPassword}
+            placeHolder={"Password"}
           />
         </div>
         <div className="inputs-special-actions-section">
@@ -36,10 +40,7 @@ const AuthPage: React.FC = () => {
           </a>
         </div>
         <div className="actions-sections">
-          <button className="google-login-btn">
-            <GoogleIcon />
-            Continue with google
-          </button>
+          <GoogleLoginButton />
           <button className="login-button" onClick={handleLogin}>
             Login
           </button>
