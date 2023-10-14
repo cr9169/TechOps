@@ -5,6 +5,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import UserDetailsInput from "./UserDetailsInput/UserDetailsInput";
 import GoogleLoginButton from "./GoogleLoginButton/GoogleLoginButton";
 import "./AuthPage.scss";
+import "../../styles/dark.scss";
 
 const AuthPage: React.FC = () => {
   const [username, setUsername] = useState("");
@@ -19,7 +20,7 @@ const AuthPage: React.FC = () => {
       <div className="auth-article-container">
         <div className="auth-input-section">
           <div className="people-icon">
-            <PeopleIcon style={{ color: "#80bf02" }} />
+            <PeopleIcon style={{ color: "$theme-icons-color" }} />
           </div>
           <UserDetailsInput
             GenericMuiIcon={LockIcon}

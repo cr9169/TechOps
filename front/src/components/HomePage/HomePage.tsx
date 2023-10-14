@@ -15,19 +15,19 @@ const HomePage: React.FC = ({}: {}) => {
         <input
           type="text"
           placeholder="Article Title"
-          className="input-title"
+          className="home-input-title"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
           maxLength={30}
         />
         <textarea
           placeholder="Write your content here..."
-          className="input-content"
+          className="home-input-content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
         ></textarea>
-        <div className="submit-button-container">
-          <button className="submit-button" onClick={handleSubmit}>
+        <div className="home-submit-button-container">
+          <button className="home-submit-button" onClick={handleSubmit}>
             Submit
           </button>
         </div>

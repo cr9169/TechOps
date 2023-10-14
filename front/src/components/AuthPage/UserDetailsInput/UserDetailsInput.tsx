@@ -1,6 +1,7 @@
 import { SvgIconProps } from "@mui/material";
 import React from "react";
 import "./UserDetailsInput.scss";
+import "../../../styles/dark.scss";
 
 const UserDetailsInput = ({
   inputData,
@@ -15,7 +16,7 @@ const UserDetailsInput = ({
 }) => {
   return (
     <div className="main-section">
-      <GenericMuiIcon style={{ color: "#80bf02" }} />
+      <GenericMuiIcon style={{ color: "$theme-icons-color" }} />
       <input
         type="text"
         placeholder={placeHolder}

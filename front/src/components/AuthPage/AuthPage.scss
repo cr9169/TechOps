@@ -1,3 +1,5 @@
+@import "../../styles/dark.scss";
+
 .auth-main-container {
   display: flex;
   flex-direction: column;
@@ -9,12 +11,10 @@
   height: auto;
   margin: 10vh auto 4vh auto;
   padding: 2rem 1.5rem 2rem 1.5rem;
-  background-color: #000000;
+  background-color: $theme-card-background-color;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  color: #ffffff;
   box-sizing: border-box;
-  border: 2px solid #ffffff;
+  border: 2px solid $theme-card-border-color;
 }
 
 .auth-input-section {
@@ -36,7 +36,7 @@
 }
 
 .forgot-password-link {
-  color: #629202;
+  color: $theme-link-color;
   margin-top: 1rem;
   font-weight: bold;
 }
@@ -50,9 +50,9 @@
 
 .login-button {
   padding: 1.2rem 7rem;
-  background-color: #80bf02;
+  background-color: $theme-button-background-color;
   font-weight: bold;
-  color: #fff;
+  color: $theme-button-text-color;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
@@ -63,5 +63,5 @@
 
 .login-button:hover,
 .login-button:focus {
-  background-color: #629202;
+  background-color: $theme-button-hover-background-color;
 }

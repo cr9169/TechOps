@@ -1,3 +1,5 @@
+@import "../../../styles/dark.scss";
+
 .main-section {
   width: 100%;
   display: flex;
@@ -19,8 +21,8 @@
   width: 80%;
   background-color: #1f1f1f;
   border-radius: 5px;
-  border: 1px solid #555;
-  color: #ffffff;
+  border: 1px solid $theme-input-border-color;
+  color: $theme-input-text-color;
   transition: border-color 0.3s, background-color 0.3s;
   box-sizing: border-box;
   padding: 0.6rem;
@@ -29,6 +31,6 @@
 }
 
 .input-data-section:focus {
-  border-color: #777;
-  background-color: #3e3e3e;
+  border-color: $theme-input-border-focus-color;
+  background-color: $theme-input-background-focus-color;
 }

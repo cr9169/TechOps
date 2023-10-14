@@ -1,3 +1,5 @@
+@import "../../styles/dark.scss";
+
 .home-main-container {
   display: flex;
   flex-direction: column;
@@ -8,25 +10,23 @@
   max-width: 95%;
   margin: 5vh auto 4vh auto;
   padding: 2rem 1.5rem 2rem 1.5rem;
-  background-color: #000000;
+  background-color: $theme-card-background-color;
   border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  color: #ffffff;
   box-sizing: border-box;
   overflow-y: auto;
-  border: 2px solid white;
+  border: 2px solid $theme-card-border-color;
 }
 
-.input-title,
-.input-content {
-  border: 1px solid #555;
-  background-color: #1f1f1f;
-  color: #ffffff;
+.home-input-title,
+.home-input-content {
+  border: 1px solid $theme-input-border-color;
+  background-color: $theme-input-background-color;
+  color: $theme-input-text-color;
   transition: border-color 0.3s, background-color 0.3s;
   box-sizing: border-box;
 }
 
-.input-title {
+.home-input-title {
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 0.5rem;
@@ -34,13 +34,13 @@
   border-radius: 5px;
 }
 
-.input-title:focus,
-.input-content:focus {
-  border-color: #777;
-  background-color: #3e3e3e;
+.home-input-title:focus,
+.home-input-content:focus {
+  border-color: $theme-input-border-focus-color;
+  background-color: $theme-input-background-focus-color;
 }
 
-.input-content {
+.home-input-content {
   width: 100%;
   height: 59vh;
   min-height: 25vh;
@@ -51,18 +51,18 @@
   overflow-x: hidden;
 }
 
-.submit-button-container {
+.home-submit-button-container {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
 }
 
-.submit-button {
+.home-submit-button {
   padding: 0.8rem 1.5rem;
-  background-color: #80bf02;
+  background-color: $theme-button-background-color;
   font-weight: bold;
-  color: #fff;
+  color: $theme-button-text-color;
   font-size: 1rem;
   border: none;
   border-radius: 5px;
@@ -71,14 +71,14 @@
   margin-top: 1rem;
 }
 
-.submit-button:hover,
-.submit-button:focus {
-  background-color: #629202;
+.home-submit-button:hover,
+.home-submit-button:focus {
+  background-color: $theme-button-hover-background-color;
 }
 
 /* Media Query Example: Adjust styles for screens smaller than 600px */
 @media (max-width: 600px) {
-  .input-title {
+  .home-input-title {
     font-size: 2.5rem;
   }
 }
