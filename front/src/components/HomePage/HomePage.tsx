@@ -15,7 +15,7 @@ const HomePage: React.FC = ({}: {}) => {
     <div className="home-main-container">
       <MainNavBar />
       <div className="home-windows-section">
-          <SecondaryNavBar />
+        <SecondaryNavBar />
         <div className="home-article-container">
           <input
             type="text"

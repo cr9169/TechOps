@@ -1,6 +1,9 @@
 @import "../../../styles/dark.scss";
 
 .secondary-nav-main-container {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
   width: 20rem;
   max-width: 25%;
   margin: 5vh 0 4vh 2vw;
@@ -10,4 +13,11 @@
   box-sizing: border-box;
   overflow-y: auto;
   border: 2px solid $theme-card-border-color;
+}
+
+.secondary-nav-main-container hr {
+  width: 95%;
+  border: none;
+  border-top: 1.5px solid $theme-card-border-color;
+  margin-top: 3rem;
 }
