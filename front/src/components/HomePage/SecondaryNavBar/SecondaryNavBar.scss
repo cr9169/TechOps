@@ -1,0 +1,13 @@
+@import "../../../styles/dark.scss";
+
+.secondary-nav-main-container {
+  width: 20rem;
+  max-width: 25%;
+  margin: 5vh 0 4vh 2vw;
+  padding: 2rem 1.5rem;
+  background-color: $theme-card-background-color;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: 2px solid $theme-card-border-color;
+}
