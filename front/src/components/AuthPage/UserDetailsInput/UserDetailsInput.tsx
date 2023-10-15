@@ -16,7 +16,9 @@ const UserDetailsInput = ({
 }) => {
   return (
     <div className="main-section">
-      <GenericMuiIcon style={{ color: "$theme-icons-color" }} />
+      <div className="generic-mui-icon">
+        <GenericMuiIcon />
+      </div>
       <input
         type="text"
         placeholder={placeHolder}

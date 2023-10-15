@@ -20,7 +20,7 @@ const AuthPage: React.FC = () => {
       <div className="auth-article-container">
         <div className="auth-input-section">
           <div className="people-icon">
-            <PeopleIcon style={{ color: "$theme-icons-color" }} />
+            <PeopleIcon />
           </div>
           <UserDetailsInput
             GenericMuiIcon={LockIcon}
