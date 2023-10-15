@@ -19,3 +19,12 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.nav-links-section a {
+  text-decoration: none;
+  transition: color 0.3s ease; // this line makes the color change smooth
+}
+
+.nav-links-section a:hover {
+  color: $theme-link-hover-color;
+}
