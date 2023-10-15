@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 1rem 2rem 2rem 2rem;
+  padding: 2rem;
   box-sizing: border-box;
   border-bottom: 2px solid $theme-card-border-color;
   background-color: $theme-card-background-color;
@@ -21,8 +21,11 @@
 }
 
 .nav-links-section a {
+  color: $theme-link-color;
+  font-weight: bold;
+  font-size: large;
   text-decoration: none;
-  transition: color 0.3s ease; // this line makes the color change smooth
+  transition: color 0.3s ease;
 }
 
 .nav-links-section a:hover {

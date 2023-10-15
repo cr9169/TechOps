@@ -4,17 +4,11 @@ const MainNavBar = () => {
   return (
     <div className="nav-main-container">
       <div className="nav-links-section">
-        <a href="/1" className="forgot-password-link">
-          1
+        <a href="/teamPage" className="team-page-link">
+          Our Team
         </a>
-        <a href="/2" className="forgot-password-link">
-          2
-        </a>
-        <a href="/3" className="forgot-password-link">
-          3
-        </a>
-        <a href="/4" className="forgot-password-link">
-          4
+        <a href="/authPage" className="log-out-link">
+          Log Out
         </a>
       </div>
     </div>

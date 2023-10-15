@@ -9,7 +9,7 @@
   width: 80rem;
   max-width: 95%;
   margin: 5vh auto 4vh auto;
-  padding: 2rem 1.5rem 2rem 1.5rem;
+  padding: 2rem 1.5rem;
   background-color: $theme-card-background-color;
   border-radius: 10px;
   box-sizing: border-box;
@@ -42,7 +42,7 @@
 
 .home-input-content {
   width: 100%;
-  height: 59vh;
+  height: 50vh;
   min-height: 25vh;
   padding: 0.8rem;
   font-size: 1.2vw;
@@ -68,7 +68,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .home-submit-button:hover,
