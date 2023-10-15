@@ -4,10 +4,10 @@ const MainNavBar = () => {
   return (
     <div className="nav-main-container">
       <div className="nav-links-section">
-        <a href="/teamPage" className="team-page-link">
+        <a href="/teamPage" className="nav-team-page-link">
           Our Team
         </a>
-        <a href="/authPage" className="log-out-link">
+        <a href="/authPage" className="nav-logout-link">
           Log Out
         </a>
       </div>
