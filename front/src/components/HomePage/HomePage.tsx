@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MainNavBar from "./MainNavBar/MainNavBar";
 import "./HomePage.scss";
 
 const HomePage: React.FC = ({}: {}) => {
@@ -11,6 +12,7 @@ const HomePage: React.FC = ({}: {}) => {
 
   return (
     <div className="home-main-container">
+      <MainNavBar />
       <div className="home-article-container">
         <input
           type="text"
