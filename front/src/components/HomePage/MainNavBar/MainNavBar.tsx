@@ -1,8 +1,10 @@
+import SearchBar from "../SearchBar/SearchBar";
 import "./MainNavBar.scss";
 
 const MainNavBar = () => {
   return (
     <div className="nav-main-container">
+      <SearchBar />
       <div className="nav-links-section">
         <a href="/teamPage" className="nav-team-page-link">
           Our Team
