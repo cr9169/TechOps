@@ -1,4 +1,4 @@
-interface IArticle {
+export interface IArticle {
   _id: string;
   websiteId: string;
   title: string;
@@ -9,4 +9,4 @@ interface IArticle {
   authorizedDate?: Date; // The date the admin has submitted the request - optional because the article can be in "draft" | "pending review" stage.
 }
 
-type Status = "draft" | "pending review" | "authorized";
+export type Status = "draft" | "pending review" | "authorized";

@@ -1,4 +1,4 @@
-interface IWebsite {
+export interface IWebsite {
   _id: string;
   name: string;
   url: string;

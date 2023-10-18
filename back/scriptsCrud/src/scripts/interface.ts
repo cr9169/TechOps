@@ -1,4 +1,4 @@
-interface IScript {
+export interface IScript {
   _id: string;
   purpose: string;
   programmingLanguage: string;

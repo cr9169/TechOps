@@ -1,4 +1,6 @@
-interface IUser {
+import { IArticle } from "../../../articlesCrud/src/articles/interface";
+
+export interface IUser {
   _id: string;
   username: string;
   password: string;
@@ -10,4 +12,4 @@ interface IUser {
   isActive: boolean;
 }
 
-type Role = "admin" | "technician" | "manager";
+export type Role = "admin" | "technician" | "manager";

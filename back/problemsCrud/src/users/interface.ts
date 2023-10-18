@@ -1,4 +1,4 @@
-interface IProblem {
+export interface IProblem {
   _id: string;
   websiteId: string;
   title: string;
@@ -7,10 +7,10 @@ interface IProblem {
   solution: ISolution;
 }
 
-interface ISolution {
+export interface ISolution {
   steps: IStep[];
 }
-interface IStep {
+export interface IStep {
   title: string;
   content: string;
 }
