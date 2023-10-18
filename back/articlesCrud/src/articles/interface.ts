@@ -1,12 +1,12 @@
 export interface IArticle {
   _id: string;
-  websiteId: string;
+  websiteId: string; // References IWebsite
   title: string;
   content: string;
-  authorUserId: string;
+  authorUserId: string; // References IUser
   status: Status;
   createdDate: Date;
-  authorizedDate?: Date; // The date the admin has submitted the request - optional because the article can be in "draft" | "pending review" stage.
+  authorizedDate?: Date;
 }
 
 export type Status = "draft" | "pending review" | "authorized";
