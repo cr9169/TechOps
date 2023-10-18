@@ -42,6 +42,11 @@
   font-weight: bold;
 }
 
+.forgot-password-link:hover {
+  color: $theme-link-hover-color;
+  transition: color 0.3s ease;
+}
+
 .actions-sections {
   display: flex;
   flex-direction: column;
