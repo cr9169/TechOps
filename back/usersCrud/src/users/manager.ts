@@ -5,7 +5,8 @@ import { comparePassword } from "../utils/passwordUtils";
 // Mock of a function to retrieve user data from a database
 const getUserByUsername = async (username: string): Promise<IUser | null> => {
   // Implement database call here
-  return null; // Placeholder
+  const x = username;
+  return Promise.resolve(null);
 };
 
 export const authenticateUser = async (
