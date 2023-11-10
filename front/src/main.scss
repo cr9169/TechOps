@@ -1,80 +1,25 @@
 @import "./styles/dark.scss";
 
-/* Resetting default browser styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box; /* Include padding and border in the width and height of elements */
-  margin: 0; /* Remove default margins */
-  padding: 0; /* Remove default paddings */
-}
-
-/* Base styles */
 html,
 body {
-  height: 100vh; /* Full viewport height */
-  width: 100%; /* Full viewport width */
-  overflow-x: hidden; /* Hide horizontal overflow */
+  height: 100vh;
+  width: 100%;
+  background-color: $theme-background-color !important;
+  color: #ffffff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif; /* System default font stack */
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px; /* Base font size */
-  background-color: #000000; /* Example background color, replace with your variable or color */
-  color: #ffffff; /* Text color */
+  margin: 0;
 }
 
-/* Ensure images and embedded content are responsive */
-img,
-iframe,
-video,
-object {
-  max-width: 100%; /* Max width is the width of the containing element */
-  height: auto; /* Keep original aspect ratio */
-}
-
-/* Root container styles */
 #root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Minimum height is full viewport */
+  height: 100%;
+  width: 100%;
 }
 
-/* Code element styles */
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-/* Responsive typography and layout adjustments */
-@media (max-width: 1200px) {
-  html {
-    font-size: 15px; /* Slightly smaller font size for large devices */
-  }
-}
-
-@media (max-width: 992px) {
-  html {
-    font-size: 14px; /* Even smaller font size for medium devices */
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 13px; /* Smaller font size for small devices */
-  }
-}
-
-@media (max-width: 576px) {
-  html {
-    font-size: 12px; /* Smallest font size for extra small devices */
-  }
-  /* More specific mobile styles can go here */
-}
-
-/* Overflow control for specific elements */
-.overflow-control {
-  overflow-y: auto; /* Add scroll if content overflows */
-  max-height: 90vh; /* Adjust to 90% of the viewport height */
 }
