@@ -1,0 +1,72 @@
+@import "../../../styles/dark.scss";
+
+.home-article-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  background-color: $theme-card-background-color;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  border: 2px solid $theme-card-border-color;
+}
+
+.home-input-title,
+.home-input-content {
+  border: 1px solid $theme-input-border-color;
+  background-color: $theme-input-background-color;
+  color: $theme-input-text-color;
+  transition: border-color 0.3s, background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.home-input-title {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+
+.home-input-title:focus,
+.home-input-content:focus {
+  border-color: $theme-input-border-focus-color;
+  background-color: $theme-input-background-focus-color;
+}
+
+.home-input-content {
+  width: 100%;
+  height: 40vh;
+  min-height: 25vh;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  resize: vertical;
+  overflow-x: hidden;
+}
+
+.home-submit-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.home-submit-button {
+  padding: 0.8rem 1.5rem;
+  background-color: $theme-button-background-color;
+  font-weight: bold;
+  color: $theme-button-text-color;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1.5rem;
+}
+
+.home-submit-button:hover,
+.home-submit-button:focus {
+  background-color: $theme-button-hover-background-color;
+}

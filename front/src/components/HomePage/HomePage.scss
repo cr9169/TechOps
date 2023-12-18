@@ -6,88 +6,22 @@
 }
 
 .home-windows-section {
+  height: 90%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .zoom-second-nav-wrapper {
-  display: flex;
-}
-
-.home-article-container {
-  width: 90rem;
-  max-width: 95%;
-  margin: 2rem 0.5rem 1rem 4rem;
-  padding: 2rem 1.5rem;
-  background-color: $theme-card-background-color;
-  border-radius: 10px;
+  height: 100%;
+  width: 20%;
   box-sizing: border-box;
-  overflow-y: auto;
-  border: 2px solid $theme-card-border-color;
+  margin: 2rem 0 1rem 2rem;
 }
 
-.home-input-title,
-.home-input-content {
-  border: 1px solid $theme-input-border-color;
-  background-color: $theme-input-background-color;
-  color: $theme-input-text-color;
-  transition: border-color 0.3s, background-color 0.3s;
+.zoom-article-container-wrapper {
+  height: 100%;
+  width: 70%;
   box-sizing: border-box;
-}
-
-.home-input-title {
-  width: 100%;
-  padding: 0.8rem;
-  margin-bottom: 0.5rem;
-  font-size: 2vw;
-  border-radius: 5px;
-}
-
-.home-input-title:focus,
-.home-input-content:focus {
-  border-color: $theme-input-border-focus-color;
-  background-color: $theme-input-background-focus-color;
-}
-
-.home-input-content {
-  width: 100%;
-  height: 55vh;
-  min-height: 25vh;
-  padding: 0.8rem;
-  font-size: 1.2vw;
-  border-radius: 5px;
-  resize: vertical;
-  overflow-x: hidden;
-}
-
-.home-submit-button-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.home-submit-button {
-  padding: 0.8rem 1.5rem;
-  background-color: $theme-button-background-color;
-  font-weight: bold;
-  color: $theme-button-text-color;
-  font-size: 1rem;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 1.5rem;
-}
-
-.home-submit-button:hover,
-.home-submit-button:focus {
-  background-color: $theme-button-hover-background-color;
-}
-
-/* Media Query Example: Adjust styles for screens smaller than 600px */
-@media (max-width: 600px) {
-  .home-input-title {
-    font-size: 2.5rem;
-  }
+  margin: 2rem 2rem 1rem 4rem;
 }
