@@ -4,6 +4,7 @@ import { UnauthorizedError } from "../utils/errors/unauthorizedError";
 import { NotFoundError } from "../utils/errors/notFoundError";
 import { UserModel } from "./model";
 
+// TODO: add rest of orFail to the other functions (if needed)
 export const createUser = async (user: IUser): Promise<IUser> => {
   return UserModel.create(user);
 };
