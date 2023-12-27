@@ -4,7 +4,6 @@ import { UnauthorizedError } from "../utils/errors/unauthorizedError";
 import { NotFoundError } from "../utils/errors/notFoundError";
 import { UserModel } from "./model";
 
-// TODO: add rest of orFail to the other functions (if needed)
 export const createUser = async (user: IUser): Promise<IUser> => {
   return UserModel.create(user);
 };
@@ -55,7 +54,7 @@ export const authenticateUser = async (
   const user = await getUserByUsername(username);
 
   if (!user) {
-    return null; // User not found
+    return null;
   }
 
   const isPasswordCorrect = await comparePassword(password, user.password);
