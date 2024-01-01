@@ -29,13 +29,14 @@ export class UsersManager {
 
   static async getUserById(userId: string): Promise<IUser | null> {
     return UserModel.findById(userId)
+      .populate("articles")
       .orFail(new NotFoundError("There is no such a user!"))
       .exec();
   }
 
   static async getUserByUsername(username: string): Promise<IUser> {
-    // Implement database call here
     return UserModel.findOne({ username: username })
+      .populate("articles")
       .orFail(new NotFoundError("There is no such a user!"))
       .exec();
   }
