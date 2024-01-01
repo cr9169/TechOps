@@ -8,7 +8,7 @@ export class UsersController {
     req: TypedRequest<typeof zodSchemas.createUserSchema>,
     res: Response
   ) {
-    res.json(await UsersManager.createUser(req.body as IUser));
+    res.json(await UsersManager.createUser(req.body));
   }
 
   static async deleteUser(
