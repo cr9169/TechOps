@@ -10,7 +10,7 @@ const UserSchema: Schema = new Schema({
     enum: ["admin", "technician", "manager"]
   },
   email: { type: String, required: true, unique: true },
-  articles: [{ type: String, ref: "Article" }],
+  articles: [{ type: String, ref: "article" }],
   createdDate: { type: Date, default: Date.now },
   lastLoginDate: { type: Date },
   isActive: { type: Boolean, default: true }
