@@ -1,6 +1,7 @@
 import { UsersManager } from "./manager";
 import * as zodSchemas from "./validation";
 import { TypedRequest } from "../utils/zod";
+import { Response } from "express";
 
 export class UsersController {
   static async createUser(
