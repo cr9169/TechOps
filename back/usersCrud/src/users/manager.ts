@@ -52,6 +52,17 @@ export class UsersManager {
     userId: string,
     updatedUserDetails: Partial<IUser>
   ): Promise<IUser> {
+    if (updatedUserDetails.password) {
+      const hashedPassword = await hashPassword(updatedUserDetails.password);
+      updatedUserDetails.password = hashedPassword;
+
+      return UserModel.findByIdAndUpdate(userId, updatedUserDetails, {
+        new: true
+      })
+        .orFail(new NotFoundError("There is no such a user!"))
+        .exec();
+    }
+
     return UserModel.findByIdAndUpdate(userId, updatedUserDetails, {
       new: true
     })
