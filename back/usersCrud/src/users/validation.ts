@@ -40,7 +40,7 @@ export const getUserByUsernameSchema = z.object({
   body: z.object({}),
   query: z.object({}),
   params: z.object({
-    id: zodMongoObjectId
+    username: z.string()
   })
 });
 
@@ -66,7 +66,7 @@ export const updateUserSchema = z.object({
 
 export const authenticateUserSchema = z.object({
   body: z.object({
-    userName: z.string(),
+    username: z.string(),
     password: z.string()
   }),
   query: z.object({}),
