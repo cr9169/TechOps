@@ -1,12 +1,24 @@
 import { IUser } from "./interface";
-import { comparePassword } from "../utils/passwordUtils";
+import { comparePassword, hashPassword } from "../utils/passwordUtils";
 import { UnauthorizedError } from "../utils/errors/unauthorizedError";
 import { NotFoundError } from "../utils/errors/notFoundError";
 import { UserModel } from "./model";
 
 export class UsersManager {
   static async createUser(user: IUser): Promise<IUser> {
-    return UserModel.create(user);
+    const newUser = await UserModel.create(user);
+
+    const hashedPassword = await hashPassword(user.password);
+
+    const updatedUser = await UserModel.findByIdAndUpdate(
+      newUser._id,
+      { password: hashedPassword },
+      { new: true }
+    )
+      .orFail(new NotFoundError("There is no such a user!"))
+      .exec();
+
+    return updatedUser;
   }
 
   static async deleteUser(userId: string): Promise<IUser | null> {

@@ -1,7 +1,6 @@
 import { UsersManager } from "./manager";
 import * as zodSchemas from "./validation";
 import { TypedRequest } from "../utils/zod";
-import { IUser } from "./interface";
 
 export class UsersController {
   static async createUser(
