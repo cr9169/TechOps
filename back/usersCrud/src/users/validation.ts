@@ -1,5 +1,4 @@
 import { z } from "zod";
-import { IUser, Role } from "./interface";
 import { zodMongoObjectId } from "../utils/zod";
 
 const RoleSchema = z.enum(["admin", "technician", "manager"]);
@@ -24,19 +23,25 @@ export const createUserSchema = z.object({
 export const deleteUserSchema = z.object({
   body: z.object({}),
   query: z.object({}),
-  params: z.object({})
+  params: z.object({
+    id: zodMongoObjectId
+  })
 });
 
 export const getUserByIdSchema = z.object({
   body: z.object({}),
   query: z.object({}),
-  params: z.object({})
+  params: z.object({
+    id: zodMongoObjectId
+  })
 });
 
 export const getUserByUsernameSchema = z.object({
   body: z.object({}),
   query: z.object({}),
-  params: z.object({})
+  params: z.object({
+    id: zodMongoObjectId
+  })
 });
 
 export const getAllUsersSchema = z.object({
@@ -52,13 +57,18 @@ export const getUsersCounterSchema = z.object({
 });
 
 export const updateUserSchema = z.object({
-  body: z.object({}),
+  body: userSchema.partial(),
   query: z.object({}),
-  params: z.object({})
+  params: z.object({
+    id: zodMongoObjectId
+  })
 });
 
 export const authenticateUserSchema = z.object({
-  body: z.object({}),
+  body: z.object({
+    userName: z.string(),
+    password: z.string()
+  }),
   query: z.object({}),
   params: z.object({})
 });
