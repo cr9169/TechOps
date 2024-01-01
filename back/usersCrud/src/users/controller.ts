@@ -1,14 +1,13 @@
 import { UsersManager } from "./manager";
 import * as zodSchemas from "./validation";
 import { TypedRequest } from "../utils/zod";
-import { IUser } from "./interface";
 
 export class UsersController {
   static async createUser(
     req: TypedRequest<typeof zodSchemas.createUserSchema>,
     res: Response
   ) {
-    res.json(await UsersManager.createUser(req.body as IUser));
+    res.json(await UsersManager.createUser(req.body));
   }
 
   static async deleteUser(
